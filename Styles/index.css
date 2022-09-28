@@ -1,0 +1,31 @@
+body {
+    background-color:grey;
+}
+
+@media (min-width:1025px) {
+    .socials {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        margin-left:30px;
+        align-items:center;
+    }
+    
+.phone-number {
+        color:pink;
+        font-size:18px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+.social-media-icons {
+        display:flex;
+        flex-direction: row;
+        margin-top:5px;
+        justify-content:space-evenly;
+    }
+    
+.logo {
+        width:40px;
+        margin-right:5px;
+    }
+}
