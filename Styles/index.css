@@ -2,7 +2,8 @@ body {
     background-color:grey;
 }
 
-@media (min-width:1025px) {
+/* Mobile */
+@media (min-width:320px) {
     .socials {
         display:flex;
         flex-direction: column;
@@ -11,20 +12,66 @@ body {
         align-items:center;
     }
     
-.phone-number {
-        color:pink;
-        font-size:18px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    .phone-number {
+        display:none;
     }
-    
-.social-media-icons {
+
+    .mobile-header-logo {
+        font-size:25px;
+    }
+
+    .social-media-icons {
         display:flex;
         flex-direction: row;
         margin-top:5px;
         justify-content:space-evenly;
     }
     
-.logo {
+    .logo {
+        width:40px;
+        margin-right:5px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width:641px) {
+
+}
+
+/* Desktop */
+@media (min-width:1025px) {
+
+    .mobile-navigation {
+        display:none;
+    }
+
+    .socials {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        margin-left:30px;
+        align-items:center;
+    }
+    
+    .phone-number {
+        color:pink;
+        font-size:18px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .mobile-header-logo {
+        display:none;
+    }
+    
+    .social-media-icons {
+        display:flex;
+        flex-direction: row;
+        margin-top:5px;
+        justify-content:space-evenly;
+    }
+    
+    .logo {
         width:40px;
         margin-right:5px;
     }
