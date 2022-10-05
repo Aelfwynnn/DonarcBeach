@@ -7,9 +7,11 @@ body {
     .socials {
         display:flex;
         flex-direction: column;
-        width:200px;
-        margin-left:30px;
+        width:100%;
         align-items:center;
+        background-color:black;
+        padding-top:10px;
+        padding-bottom:10px;
     }
     
     .phone-number {
@@ -17,7 +19,22 @@ body {
     }
 
     .mobile-header-logo {
-        font-size:25px;
+        font-size:30px;
+        color:white;
+    }
+
+    .divider {
+        width:75%;
+    }
+
+    .mobile-navigation {
+        background-color:white;
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        padding-top:1%;
+        padding-bottom:1%;
+        justify-content:space-between;
     }
 
     .social-media-icons {
@@ -25,11 +42,27 @@ body {
         flex-direction: row;
         margin-top:5px;
         justify-content:space-evenly;
+        width:100%;
     }
     
     .logo {
         width:40px;
-        margin-right:5px;
+    }
+
+    .hamburger-icon {
+        width:40px;
+    }
+
+    .mobile-book-button {
+        font-size: 20px;
+    }
+
+    .booking {
+        display:none;
+    }
+
+    .header-links {
+        display:none;
     }
 
 }
