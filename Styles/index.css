@@ -63,6 +63,27 @@ body {
         font-family:Arial, Helvetica, sans-serif;
     }
 
+    .info-images {
+        width:100%;
+        background:white;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:5% 0% 5% 0%;
+    }
+
+    .image {
+        width:50%;
+    }
+
+    .image-divider {
+        width:75%;
+    }
+
+    .donarc-logo {
+        display:none;
+    }
+
     .booking {
         display:none;
     }
