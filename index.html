@@ -13,11 +13,25 @@
         <link rel="stylesheet" href="./Styles/index.css">
     </head>
     <body>
+
         <div class="header">
             <div class="mobile-navigation">
-                <img class="hamburger-icon" src="./Images/Hamburger_icon.svg.png" />
+                <a href="javascript:void(0)">
+                    <img class="hamburger-icon" id="openbtn" src="./Images/Hamburger_icon.svg.png" />
+                </a>
                 <div class="mobile-book-button">Book Now</div>
             </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay-menu">
+                <a href="javascript:void(0)" class="closebtn" id="closebtn">X</a>
+                    <a href="#" class="overlay-link">Booking</a>
+                    <a href="#" class="overlay-link">Rentals</a>
+                    <a href="#" class="overlay-link">Restaurant</a>
+                    <a href="#" class="overlay-link">Hotel</a>
+                </div>
+            </div>
+
             <div class="socials">
                 <div class="mobile-header-logo">Donarc Beach</div>
                 <hr class="divider" />
@@ -28,9 +42,11 @@
                     <img class="logo" src="./Images/facebook-logo.png" />
                 </div>
             </div>
+
             <div class="donarc-logo">
                 <img class="donarc-svg" src="" />
             </div>
+
             <div class="booking">
                 <div class="address">
                     <img class="address-icon" src="" />
@@ -38,12 +54,14 @@
                 </div>
                 <div class="book-button">Book Now</div>
             </div>
+
             <div class="header-links">
                 <div class="link">Restaurant</div>
                 <div class="link">Beach</div>
                 <div class="link">Hotel</div>
                 <div class="link">Book An Event</div>
             </div>
+
             <div class="info-images">
                 <img class="image" src="./Images/placeholder.png" />
                 <hr class="image-divider" />
@@ -51,12 +69,28 @@
                 <hr class="image-divider" />
                 <img class="image" src="./Images/placeholder.png" />
             </div>
+
             <div class="mobile-footer">
                 <div class="mobile-address">Purok 5 Tubigan, Initao, 9002 Misamis Oriental, Philippines</div>
                 <hr class="footer-divider" />
                 <div class="mobile-phone-number">+63 908 178 6643</div>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script async defer>
+
+            function OpenNavOverlay() {
+                document.getElementById("overlay").style.width = "50%";
+                console.log("OwO");
+            }
+
+            function CloseNavOverlay() {
+                document.getElementById("overlay").style.width = "0%";
+            }
+            
+            document.getElementById("openbtn").addEventListener("click", OpenNavOverlay, false)
+
+            document.getElementById("closebtn").addEventListener("click", CloseNavOverlay, false)
+
+        </script>
     </body>
 </html>
