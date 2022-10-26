@@ -63,7 +63,7 @@ body {
         font-family:Arial, Helvetica, sans-serif;
     }
 
-    .info-images {
+    .rental-info {
         width:100%;
         background:white;
         display:flex;
@@ -72,8 +72,28 @@ body {
         padding:5% 0% 5% 0%;
     }
 
-    .image {
+    .rental-title {
+        font-family:Arial, Helvetica, sans-serif;
+        color:black;
+        font-size:20px;
+    }
+
+    .rentals-list {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .rental {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .rental-image {
         width:50%;
+    }
+
+    .rental-text {
+        
     }
 
     .image-divider {
