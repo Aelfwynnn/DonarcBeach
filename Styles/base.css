@@ -1,3 +1,9 @@
+:root {
+
+    --active-bg-color: black;
+    --page-bg-color: white;
+}
+
 body {
     background-color:grey;
 }
@@ -9,7 +15,7 @@ body {
         flex-direction: column;
         width:100%;
         align-items:center;
-        background-color:black;
+        background-color:var(--active-bg-color);
         padding-top:10px;
         padding-bottom:20px;
     }
@@ -28,7 +34,7 @@ body {
     }
 
     .mobile-navigation {
-        background-color:white;
+        background-color:var(--page-bg-color);
         display:flex;
         flex-direction:row;
         width:100%;
@@ -65,14 +71,14 @@ body {
 
     .mobile-footer {
         width:100%;
-        background-color:black;
+        background-color: var(--active-bg-color);
         display:flex;
         flex-direction:column;
         align-items:center;
     }
 
     .mobile-address {
-        color:white;
+        color:var(--page-bg-color);
         margin-top:3%;
         margin-bottom:3%;
         margin-left:3%;
@@ -82,11 +88,11 @@ body {
 
     .footer-divider {
         width:99%;
-        color:white;
+        color:var(--page-bg-color);
     }
 
     .mobile-phone-number {
-        color:white;
+        color:var(--page-bg-color);
         margin-top:3%;
         margin-bottom:3%;
         font-size:25px;
@@ -127,7 +133,7 @@ body {
     .closebtn {
         text-decoration:none;
         font-size:40px;
-        color:white;
+        color:var(--page-bg-color);
         margin-left:80%;
         font-family:Arial, Helvetica, sans-serif;
         margin-bottom:5%;
@@ -135,7 +141,7 @@ body {
 
     .overlay-link {
         text-decoration:none;
-        color:white;
+        color:var(--page-bg-color);
         font-size:30px;
         font-family:Arial, Helvetica, sans-serif;
         margin-bottom:5%;
